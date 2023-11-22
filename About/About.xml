@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+    <name>Epochs - Pottery</name>
+    <author>DetVisor</author>
+	
+    <supportedVersions>
+        <li>1.4</li>
+    </supportedVersions>
+	
+	<packageId>det.epochspottery</packageId>
+	<description>Make clay from chunks, create fancy and highly tradeable decorative pots and build structures with new clay bricks!
+	</description>
+    <loadAfter>
+        <li>Ludeon.RimWorld</li>
+        <li>Ludeon.RimWorld.Royalty</li>
+        <li>Ludeon.RimWorld.Ideology</li>
+		<li>Ludeon.RimWorld.Biotech</li>
+        <li>OskarPotocki.VanillaFactionsExpanded.Core</li>
+    </loadAfter>
+
+</ModMetaData>
