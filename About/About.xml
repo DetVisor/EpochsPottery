@@ -5,6 +5,7 @@
 	
     <supportedVersions>
         <li>1.4</li>
+        <li>1.5</li>
     </supportedVersions>
 	
 	<packageId>det.epochspottery</packageId>

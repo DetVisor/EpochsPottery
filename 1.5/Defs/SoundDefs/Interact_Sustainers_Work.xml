@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<SoundDef>
+    <defName>Recipe_Turn</defName>  
+    <sustain>True</sustain>  
+    <context>MapOnly</context>
+    <maxVoices>3</maxVoices>  
+    <priorityMode>PrioritizeNearest</priorityMode>  
+    <sustainStartSound>Turn_Start</sustainStartSound>  
+    <sustainStopSound>Sculpt_Stop</sustainStopSound>  
+    <subSounds>
+      <li>
+        <muteWhenPaused>True</muteWhenPaused>      
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ClayWorking</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>14~14</volumeRange>      
+        <pitchRange>0.9541177~1.137647</pitchRange>      
+        <distRange>10~50</distRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+  <SoundDef>
+    <defName>Turn_Start</defName>  
+    <context>MapOnly</context>
+    <subSounds>
+      <li>
+        <grains>
+          <li Class="AudioGrain_Clip">
+            <clipPath>Things/ClayStart</clipPath>
+          </li>
+        </grains>      
+        <volumeRange>11~11</volumeRange>      
+        <sustainLoop>False</sustainLoop>
+      </li>
+    </subSounds>
+  </SoundDef>
+
+</Defs>

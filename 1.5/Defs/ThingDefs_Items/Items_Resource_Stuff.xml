@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Pure stuffs: Basics ====================-->
+
+  <ThingDef ParentName="ResourceBase">
+    <defName>DV_Clay</defName>
+    <label>clay</label>
+    <description>A fine, stiff earth which can be moulded and shaped into various forms. Human ancestors discovered the useful properties of clay many years ago, and since then it is still widely used across the galaxy for decorative and religious purposes, by both wealthy nobles and neolithic tribes.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Clay</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <soundInteract>Metal_Drop</soundInteract>
+    <soundDrop>Metal_Drop</soundDrop>
+    <statBases>
+      <MarketValue>1.2</MarketValue>
+      <Mass>0.4</Mass>
+    </statBases>
+    <useHitPoints>false</useHitPoints>
+    <healthAffectsPrice>false</healthAffectsPrice>
+    <thingCategories>
+      <li>ResourcesRaw</li>
+    </thingCategories>
+    <deepCommonality>1</deepCommonality>
+    <deepCountPerPortion>45</deepCountPerPortion>
+    <deepLumpSizeRange>8~12</deepLumpSizeRange>
+    <burnableByRecipe>false</burnableByRecipe>
+    <smeltable>false</smeltable>
+    <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+    <allowedArchonexusCount>80</allowedArchonexusCount>
+  </ThingDef>
+
+  <ThingDef ParentName="StoneBlocksBase">
+    <defName>DV_ClayBricks</defName>
+    <label>clay brick</label>
+    <description>Clay that has been shaped and hardened into rectangular blocks. Easy and light to build with, but is awful for any kind of weapon.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/ClayBricks</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+    </graphicData>
+    <statBases>
+      <Mass>0.8</Mass>
+      <SharpDamageMultiplier>0.25</SharpDamageMultiplier>
+      <BluntDamageMultiplier>0.40</BluntDamageMultiplier>
+    </statBases>
+    <stuffProps>
+      <categories Inherit="false">
+        <li>Stony</li>		
+      </categories>	
+      <color>(130, 89, 67, 255)</color>
+      <soundImpactBullet>BulletImpact_Ground</soundImpactBullet>
+      <soundMeleeHitSharp>MeleeHit_Stone</soundMeleeHitSharp>
+      <soundMeleeHitBlunt>MeleeHit_Stone</soundMeleeHitBlunt>
+      <soundImpactMelee>Pawn_Melee_Punch_HitBuilding_Stone</soundImpactMelee>
+      <stuffAdjective>clay</stuffAdjective>
+      <statFactors>
+		 	 <MarketValue>0.9</MarketValue>
+			 <Flammability>0</Flammability>
+			 <BedRestEffectiveness>0.9</BedRestEffectiveness>
+			 <MeleeWeapon_CooldownMultiplier>1.10</MeleeWeapon_CooldownMultiplier>	  
+			 <Beauty>0</Beauty>  
+			 <MaxHitPoints>1.5</MaxHitPoints>
+			 <WorkToBuild>2.1</WorkToBuild>
+			 <WorkToMake>0.85</WorkToMake>
+      </statFactors>  
+    </stuffProps>
+    <smeltable>false</smeltable>	  	
+  </ThingDef>
+
+
+</Defs>

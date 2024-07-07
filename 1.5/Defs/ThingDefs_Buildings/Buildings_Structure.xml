@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <DesignatorDropdownGroupDef>
+		<defName>ClayWalls</defName> 
+        <label>clay walls</label>
+        <useGridMenu>false</useGridMenu>
+	</DesignatorDropdownGroupDef>
+
+    <ThingDef ParentName="BuildingBase">
+        <defName>DV_BasicClayWall</defName>
+        <label>raw clay wall</label>
+        <description>An impassable wall made out of just raw clay. Not the most durable, but it takes little effort to build. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        
+        <graphicData>
+          <texPath>Things/Building/ClayWalls/BasicClayWall/BasicClayWall</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerFiller</linkType>
+          <linkFlags>
+            <li>Wall</li>
+            <li>Rock</li>
+          </linkFlags>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+            <edgeTop>Damage/Edge</edgeTop>
+            <edgeBot>Damage/Edge</edgeBot>
+            <edgeLeft>Damage/Edge</edgeLeft>
+            <edgeRight>Damage/Edge</edgeRight>
+          </damageData>
+          <color>(130, 89, 67, 255)</color>
+        </graphicData>
+        
+        <uiIconPath>Things/Building/ClayWalls/BasicClayWall_UI</uiIconPath>
+        
+        <statBases>
+          <MaxHitPoints>200</MaxHitPoints>
+          <WorkToBuild>110</WorkToBuild>
+          <Flammability>0</Flammability>
+          <MeditationFocusStrength>0.10</MeditationFocusStrength>
+        </statBases>
+        <costList>
+            <DV_Clay>6</DV_Clay>
+        </costList>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Medium</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <designatorDropdown>ClayWalls</designatorDropdown>
+        <uiOrder>2000</uiOrder>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        
+        <building>
+          <paintable>true</paintable>
+          <isInert>true</isInert>
+          <isPlaceOverableWall>true</isPlaceOverableWall>
+          <ai_chillDestination>false</ai_chillDestination>
+          <supportsWallAttachments>true</supportsWallAttachments>
+          <blueprintGraphicData>
+            <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+          </blueprintGraphicData>
+          <relatedBuildCommands>
+            <li>Door</li>
+            <li>Autodoor</li>
+          </relatedBuildCommands>
+        </building>
+        
+        
+        <comps>
+          <li Class="CompProperties_MeditationFocus">
+            <statDef>MeditationFocusStrength</statDef>
+            <focusTypes>
+              <li>Natural</li>
+            </focusTypes>
+          </li>
+        </comps>
+        
+        <damageMultipliers>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+          <li>
+            <damageDef>Thump</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+        </damageMultipliers>
+        
+        <designationHotKey>Misc3</designationHotKey>
+      </ThingDef>
+
+      <ThingDef ParentName="BuildingBase">
+        <defName>DV_CobbClayWall</defName>
+        <label>cobb clay wall</label>
+        <description>An impassable wall made out of a mixture of clay and hay. Together, the materials create a strong and durable structure that can take quite the beating. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        <category>Building</category>
+        
+        <graphicData>
+          <texPath>Things/Building/ClayWalls/CobbClayWall/CobbClayWall</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerFiller</linkType>
+          <linkFlags>
+            <li>Wall</li>
+            <li>Rock</li>
+          </linkFlags>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+            <edgeTop>Damage/Edge</edgeTop>
+            <edgeBot>Damage/Edge</edgeBot>
+            <edgeLeft>Damage/Edge</edgeLeft>
+            <edgeRight>Damage/Edge</edgeRight>
+          </damageData>
+          <color>(130, 89, 67, 255)</color>
+        </graphicData>
+        
+        <uiIconPath>Things/Building/ClayWalls/CobbClayWall_UI</uiIconPath>
+        
+        <statBases>
+          <MaxHitPoints>350</MaxHitPoints>
+          <WorkToBuild>150</WorkToBuild>
+          <Flammability>0</Flammability>
+          <MeditationFocusStrength>0.10</MeditationFocusStrength>
+        </statBases>
+        <costList>
+            <DV_Clay>8</DV_Clay>
+            <Hay>4</Hay>
+        </costList>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <designationCategory>Structure</designationCategory>
+        <designatorDropdown>ClayWalls</designatorDropdown>
+        <uiOrder>2000</uiOrder>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        
+        <building>
+          <paintable>true</paintable>
+          <isInert>true</isInert>
+          <isPlaceOverableWall>true</isPlaceOverableWall>
+          <ai_chillDestination>false</ai_chillDestination>
+          <supportsWallAttachments>true</supportsWallAttachments>
+          <blueprintGraphicData>
+            <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+          </blueprintGraphicData>
+          <relatedBuildCommands>
+            <li>Door</li>
+            <li>Autodoor</li>
+          </relatedBuildCommands>
+          <smoothedThing>DV_CarvedClayWall</smoothedThing>
+        </building>
+        
+        <comps>
+          <li Class="CompProperties_MeditationFocus">
+            <statDef>MeditationFocusStrength</statDef>
+            <focusTypes>
+              <li>Natural</li>
+            </focusTypes>
+          </li>
+        </comps>
+        
+        <damageMultipliers>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+          <li>
+            <damageDef>Thump</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+        </damageMultipliers>
+        
+        <designationHotKey>Misc3</designationHotKey>
+      </ThingDef>
+
+      <ThingDef ParentName="BuildingBase">
+        <defName>DV_CarvedClayWall</defName>
+        <label>carved clay wall</label>
+        <description>An impassable wall made out of a mixture of clay and hay. Together, the materials create a strong and durable structure that can take quite the beating. This specific wall is etched with intriguing and unique carving, very nice to look at. Capable of holding up a roof.</description>
+        <thingClass>Building</thingClass>
+        
+        <graphicData>
+          <texPath>Things/Building/ClayWalls/CarvedClayWall/CarvedClayWall</texPath>
+          <graphicClass>Graphic_Single</graphicClass>
+          <linkType>CornerFiller</linkType>
+          <linkFlags>
+            <li>Wall</li>
+            <li>Rock</li>
+          </linkFlags>
+          <damageData>
+            <cornerTL>Damage/Corner</cornerTL>
+            <cornerTR>Damage/Corner</cornerTR>
+            <cornerBL>Damage/Corner</cornerBL>
+            <cornerBR>Damage/Corner</cornerBR>
+            <edgeTop>Damage/Edge</edgeTop>
+            <edgeBot>Damage/Edge</edgeBot>
+            <edgeLeft>Damage/Edge</edgeLeft>
+            <edgeRight>Damage/Edge</edgeRight>
+          </damageData>
+          <color>(130, 89, 67, 255)</color>
+        </graphicData>
+        
+        <uiIconPath>Things/Building/ClayWalls/CarvedClayWall_UI</uiIconPath>
+        
+        <statBases>
+          <MaxHitPoints>350</MaxHitPoints>
+          <WorkToBuild>150</WorkToBuild>
+          <Flammability>0</Flammability>
+          <MeditationFocusStrength>0.25</MeditationFocusStrength>
+          <Beauty>1.2</Beauty>
+        </statBases>
+        <costList>
+            <DV_Clay>8</DV_Clay>
+            <Hay>4</Hay>
+        </costList>
+        <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+        <altitudeLayer>Building</altitudeLayer>
+        <passability>Impassable</passability>
+        <blockWind>true</blockWind>
+        <castEdgeShadows>true</castEdgeShadows>
+        <fillPercent>1</fillPercent>
+        <coversFloor>true</coversFloor>
+        <placingDraggableDimensions>1</placingDraggableDimensions>
+        <tickerType>Never</tickerType>
+        <rotatable>false</rotatable>
+        <selectable>true</selectable>
+        <neverMultiSelect>true</neverMultiSelect>
+        <useStuffTerrainAffordance>false</useStuffTerrainAffordance>
+        <terrainAffordanceNeeded>Heavy</terrainAffordanceNeeded>
+        <holdsRoof>true</holdsRoof>
+        <staticSunShadowHeight>1.0</staticSunShadowHeight>
+        <blockLight>true</blockLight>
+        <canOverlapZones>false</canOverlapZones>
+        <fertility>0</fertility>
+        
+        <building>
+          <paintable>true</paintable>
+          <isInert>true</isInert>
+          <isPlaceOverableWall>true</isPlaceOverableWall>
+          <ai_chillDestination>false</ai_chillDestination>
+          <supportsWallAttachments>true</supportsWallAttachments>
+          <blueprintGraphicData>
+            <texPath>Things/Building/Linked/Wall_Blueprint_Atlas</texPath>
+          </blueprintGraphicData>
+          <relatedBuildCommands>
+            <li>Door</li>
+            <li>Autodoor</li>
+          </relatedBuildCommands>
+        </building>
+        
+        <comps>
+          <li Class="CompProperties_MeditationFocus">
+            <statDef>MeditationFocusStrength</statDef>
+            <focusTypes>
+              <li>Natural</li>
+            </focusTypes>
+          </li>
+        </comps>
+        
+        <damageMultipliers>
+          <li>
+            <damageDef>Bomb</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+          <li>
+            <damageDef>Thump</damageDef>
+            <multiplier>2</multiplier>
+          </li>
+        </damageMultipliers>
+        
+        <designationHotKey>Misc3</designationHotKey>
+      </ThingDef>
+
+</Defs>

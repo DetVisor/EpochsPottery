@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <TerrainDef ParentName="TileStoneBase">
+        <defName>DV_TileClay</defName>
+        <label>clay tile</label>
+        <color>(130, 89, 67)</color>
+        <costList>
+          <DV_ClayBricks>4</DV_ClayBricks>
+        </costList>
+      </TerrainDef>
+
+      <TerrainDef ParentName="FlagstoneBase">
+        <defName>DV_FlagstoneClay</defName>
+        <label>clay flagstone</label>
+        <color>(130, 89, 67)</color>
+        <costList>
+          <DV_ClayBricks>4</DV_ClayBricks>
+        </costList>
+      </TerrainDef>
+
+</Defs>
