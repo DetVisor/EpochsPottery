@@ -3,5 +3,6 @@
   <Excluded>
     <exclude>.git</exclude>
     <exclude>Previews</exclude>
+    <exclude>Sounds\Things\umanesimo_rinascimento.ppt</exclude>
   </Excluded>
 </Configuration>
