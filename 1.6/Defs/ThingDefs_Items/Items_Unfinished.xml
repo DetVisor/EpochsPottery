@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<ThingDef ParentName="UnfinishedBase">
+    <defName>DV_UnfinishedPot</defName>
+    <label>unfinished pot</label>
+    <description>An unfinished pot.</description>
+    <graphicData>
+      <color>(130, 89, 67, 255)</color>
+      <texPath>Things/Item/Unfinished/UnfinishedPot</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stuffCategories Inherit="false" />
+  </ThingDef>
+
+</Defs>

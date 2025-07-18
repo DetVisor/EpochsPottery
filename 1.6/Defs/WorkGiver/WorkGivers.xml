@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+<WorkGiverDef>
+  <defName>DoBillsTurn</defName>
+  <label>make things at a turning table</label>
+  <giverClass>WorkGiver_DoBill</giverClass>
+  <workType>Art</workType>
+  <priorityInType>100</priorityInType>
+  <fixedBillGiverDefs>
+    <li>DV_ClayTurningTable</li>
+    <li>DV_IndustrialClayTurningTable</li>
+  </fixedBillGiverDefs>
+  <verb>turn</verb>
+  <gerund>turning at</gerund>
+  <requiredCapacities>
+    <li>Manipulation</li>
+  </requiredCapacities>
+  <prioritizeSustains>true</prioritizeSustains>
+</WorkGiverDef>
+
+</Defs>

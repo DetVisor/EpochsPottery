@@ -2,7 +2,9 @@
 <Configuration>
   <Excluded>
     <exclude>.git</exclude>
+    <exclude>About\img1.png</exclude>
+    <exclude>About\img2.png</exclude>
+    <exclude>About\img3.png</exclude>
     <exclude>Previews</exclude>
-    <exclude>Sounds\Things\umanesimo_rinascimento.ppt</exclude>
   </Excluded>
 </Configuration>

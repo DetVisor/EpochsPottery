@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DV_Pots</defName>
+    <label>pots</label>
+    <description>A set of small decorative clay pots, pretty but fragile.</description>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <possessionCount>1</possessionCount>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.20</fillPercent>
+    <statBases>
+      <MaxHitPoints>12</MaxHitPoints>
+      <WorkToMake>1900</WorkToMake>
+      <Mass>3</Mass>
+      <Flammability>0.2</Flammability>
+      <Beauty>3</Beauty>
+      <MarketValue>20</MarketValue>
+    </statBases>
+    <costList>
+      <DV_Clay>10</DV_Clay>
+    </costList>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>35</pathCost>
+    <rotatable>true</rotatable>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
+    </building>
+    <graphicData>
+      <texPath>Things/Building/Pots/Pots</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <color>(130, 89, 67, 255)</color>
+      <damageData>
+        <rect>(0.3,0,0.3,0.9)</rect>
+      </damageData>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>DV_UnfinishedPot</unfinishedThingDef>
+      <effectWorking>ClayTurning</effectWorking>
+      <soundWorking>Recipe_Turn</soundWorking>
+      <recipeUsers>
+        <li>DV_ClayTurningTable</li>
+        <li>DV_IndustrialClayTurningTable</li>
+        <li>CraftingSpot</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+  <ThingDef ParentName="BuildingBase">
+    <defName>DV_BigPot</defName>
+    <label>big pot</label>
+    <description>A large decorative clay pot, pretty to look at but fragile and time-consuming to make.</description>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <possessionCount>1</possessionCount>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>PassThroughOnly</passability>
+    <fillPercent>0.40</fillPercent>
+    <statBases>
+      <MaxHitPoints>25</MaxHitPoints>
+      <WorkToMake>2400</WorkToMake>
+      <Mass>3.5</Mass>
+      <Flammability>0.2</Flammability>
+      <Beauty>5</Beauty>
+      <MarketValue>40</MarketValue>
+    </statBases>
+    <costList>
+      <DV_Clay>20</DV_Clay>
+    </costList>
+    <canOverlapZones>false</canOverlapZones>
+    <pathCost>50</pathCost>
+    <rotatable>true</rotatable>
+    <building>
+      <isInert>true</isInert>
+      <ai_chillDestination>false</ai_chillDestination>
+      <paintable>true</paintable>
+    </building>
+    <graphicData>
+      <texPath>Things/Building/BigPot/BigPot</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shadowData>
+        <volume>(0.55, 0.35, 0.3)</volume>
+        <offset>(0, 0, -0.28)</offset>
+      </shadowData>
+      <color>(130, 89, 67, 255)</color>
+      <damageData>
+        <rect>(0.3,0,0.3,0.9)</rect>
+      </damageData>
+      <drawRotated>false</drawRotated>
+    </graphicData>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+    <tradeTags>
+      <li>Art</li>
+    </tradeTags>
+    <recipeMaker>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <unfinishedThingDef>DV_UnfinishedPot</unfinishedThingDef>
+      <effectWorking>ClayTurning</effectWorking>
+      <soundWorking>Recipe_Turn</soundWorking>
+      <recipeUsers>
+        <li>DV_ClayTurningTable</li>
+        <li>DV_IndustrialClayTurningTable</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

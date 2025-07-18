@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+<ThingDef ParentName="BenchBase">
+    <defName>DV_ClayTurningTable</defName>
+    <label>potter's wheel</label>
+    <description>A work station equipped with a flat spinning wheel for making clay pottery.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/ClayTurningTable/ClayTurningTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+      <drawSize>(3.8, 2.8)</drawSize>
+      <shadowData>
+        <volume>(1.8, 0.35, 0.59)</volume>
+        <offset>(0, 0, 0.08)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+        <Steel>25</Steel>
+    </costList>
+      <stuffCategories>
+        <li>Metallic</li>
+        <li>Woody</li>
+      </stuffCategories>
+      <costStuffCount>45</costStuffCount>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>2200</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>1.0</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(2,1)</size>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2500</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+  <ThingDef ParentName="BenchBase">
+    <defName>DV_IndustrialClayTurningTable</defName>
+    <label>clay-turning table</label>
+    <description>An electric work station equipped with a flat spinning wheel for making clay pottery.</description>
+    <thingClass>Building_WorkTable</thingClass>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Production/IndustrialClayTurningTable/IndustrialClayTurningTable</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawRotated>false</drawRotated>
+      <drawSize>(2.8, 2.8)</drawSize>
+      <shadowData>
+        <volume>(0.5, 0.5, 0.5)</volume>
+        <offset>(0, 0, 0)</offset>
+      </shadowData>
+      <damageData>
+        <cornerTL>Damage/Corner</cornerTL>
+        <cornerTR>Damage/Corner</cornerTR>
+        <cornerBL>Damage/Corner</cornerBL>
+        <cornerBR>Damage/Corner</cornerBR>
+      </damageData>
+    </graphicData>
+    <costList>
+        <Steel>45</Steel>
+        <ComponentIndustrial>5</ComponentIndustrial>
+      </costList>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.5</fillPercent>
+    <useHitPoints>True</useHitPoints>
+    <statBases>
+      <WorkToBuild>3500</WorkToBuild>
+      <MaxHitPoints>150</MaxHitPoints>
+      <Flammability>0.5</Flammability>
+      <Cleanliness>-3</Cleanliness>
+    </statBases>
+    <size>(1,1)</size>
+    <designationCategory>Production</designationCategory>
+    <uiOrder>2500</uiOrder>
+    <passability>PassThroughOnly</passability>
+    <pathCost>50</pathCost>
+    <rotatable>true</rotatable>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0,-1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable"/>
+      <li Class="CompProperties_AffectedByFacilities">
+        <linkableFacilities>
+          <li>ToolCabinet</li>
+        </linkableFacilities>
+      </li>
+      <li Class="CompProperties_Breakdownable"/>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_ShowFacilitiesConnections</li>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <researchPrerequisites>
+      <li>Stonecutting</li>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>
